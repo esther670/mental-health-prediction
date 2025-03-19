@@ -36,4 +36,3 @@ Dense Layers: Fully connected layers with an output layer using a softmax activa
 
 ## 5. Evaluate on Test Set & Generate Predictions
 - Use the trained model to predict probabilities for the test dataset.
-- Format predictions according to SampleSubmission.csv.
