@@ -18,7 +18,7 @@ By leveraging Natural Language Processing (NLP) and Deep Learning, this solution
 - Tokenization & Padding – Convert text into sequences and pad them for uniform input size.
 - Encode Labels: Since the labels are categorical (Depression, Suicide, Alcoholism, Drugs), they got converted into numerical format using one-hot encoding and label encoding
 
-## 2. Define the LSTM Model
+## 2. Define the Models
 - Created a deep learning model using an embedding layer, LSTM layer(s), and dense layers for classification. 
 - The general architecture:
 Embedding Layer: Converts words into dense vectors.
