@@ -15,28 +15,32 @@ By leveraging Natural Language Processing (NLP) and Deep Learning, this solution
 
 # PROCEDURE
 ## 1. Preprocessing
-- Text Preprocessing – Clean the text by lowercasing, removing punctuation, stopwords, and tokenizing.
+- Text Preprocessing – Clean the text by lowercasing, removing punctuation, stopwords, text synonym augmentation and tokenizing.
 - Tokenization & Padding – Convert text into sequences and pad them for uniform input size.
 - Encode Labels: Since the labels are categorical (Depression, Suicide, Alcoholism, Drugs), they got converted into numerical format using one-hot encoding and label encoding
 
 ## 2. Define the Models
+- Tested out 3 models i.e LSTM (Long Short Term Memory), GRU (Gated Recurrent Unit), BiLSTM (Bidirectional Long Short Term Memory) and Hybrid model (LSTM + GRU )
 - Created a deep learning model using an embedding layer, LSTM layer(s), and dense layers for classification. 
 - The general architecture:
 Embedding Layer: Converts words into dense vectors.
-LSTM Layer: Captures sequential patterns in the text.
-Dense Layers: Fully connected layers with an output layer using a softmax activation function.
+Spatial dropout: Help prevent overfitting
+LSTM/BiLSTM/GRU Layer: Captures sequential patterns in the text.
+Normalization layer: to prevent overfitting and improve stability using the ReLU regularization function
+Dense Layers: Fully connected layers of 64 neurons that refines the extracted features.
+Output layer: uses a softmax activation function to classify the text into one of the multiple categories.
 
 ## 3. Compile the Model
 - Loss function: categorical_crossentropy (since it's a multi-class classification task).
 - Optimizer: Adam (commonly used for NLP tasks).
 - Evaluation Metrics: accuracy.
 
-## 4. Train the Model
+## 4. Train the Models
 - Fit the model using the training data.
-- Use validation data to monitor performance.
+- Based on the accuracy results on the performance of the 4 models, the hybrid model performed best with an accuracy of 94.64% and loss of 0.71
 
 ## 5. Evaluate on Test Set & Generate Predictions
-- Use the trained model to predict probabilities for the test dataset.
+- Fitted the hybrid model to predict label probabilities for the test dataset.
 
 
 ## Data source
