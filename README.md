@@ -6,6 +6,7 @@ This project aims to develop an LSTM-based deep learning model for automated men
 
 By leveraging Natural Language Processing (NLP) and Deep Learning, this solution could help universities and mental health professionals detect early signs of mental distress, enabling timely intervention and support.
 
+
 ## Key Objectives:
 1. Text Classification: Develop an LSTM-based model to classify students’ statements into relevant mental health categories.
 2. Probabilistic Predictions: Instead of strict classification, output a probability score for each category to indicate the likelihood of each mental health issue.
@@ -36,3 +37,7 @@ Dense Layers: Fully connected layers with an output layer using a softmax activa
 
 ## 5. Evaluate on Test Set & Generate Predictions
 - Use the trained model to predict probabilities for the test dataset.
+
+
+## Data source
+https://zindi.africa/competitions/basic-needs-basic-rights-kenya-tech4mentalhealth
