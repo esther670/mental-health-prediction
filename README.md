@@ -1,4 +1,4 @@
-# mental-health-chatbot
+# mental-health-prediction
 ## Problem Statement
 Mental health issues among university students are a growing concern, often leading to severe consequences if not identified and addressed in time. However, many students struggle to seek help due to stigma or lack of awareness. Traditional methods of mental health assessment require direct intervention, which may not always be feasible.
 
